@@ -1,0 +1,87 @@
+<title>Yaiki Translate</title>
+<meta charset="UTF-8">
+<script src="script.js"></script>
+<div id="header">Yaiki Translate</div>
+<table align="center">
+	<tr>
+		<td>
+			<textarea id="input" placeholder="Введите сюда текст"></textarea>
+		</td>
+		<td>
+			<div id="out"><div id="none"></div></div>
+		</td>
+	</tr>
+</table>
+<div id="footer">2014 <a href="http://vk.com/opryapash">Pashman</a> & <a href="http://vk.com/id34848137">Kostenloser</a></div>
+<style>
+#header {
+	width: 100%;
+	height: 80;
+	position: absolute;
+	top: 0px;
+	background-color: orange;
+	color: white;
+	font-family: Lucida;
+	line-height: 80px;
+	font-size: 38px;
+} 
+body {
+	margin: 0;
+}
+
+#input {
+	margin-top: 100px;
+	width: 200px;
+	height: 80px;
+}
+#none {
+	margin-top: 100px;
+	width: 200px;
+	height: 80px;
+	background-color: #BDBDBD;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #BDBDBD;
+	font-family: Lucida;
+	font-size: 18px;
+}
+a{
+	text-decoration: none;
+}
+a:hover {
+	color: #585858;
+}
+a:visited {
+	color: #BDBDBD;
+}
+#have {
+	margin-top: 100px;
+	text-align: center;
+	width: 200px;
+	height: 80px;
+	background-color: #58ACFA;
+	font-family: Lucida;
+	font-size: 18px;
+	color: white;
+	border-radius: 10px;
+	-webkit-animation-name: fadeInDown;
+	-webkit-animation-duration: 0.8s;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+</style>
